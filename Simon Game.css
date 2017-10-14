@@ -1,0 +1,194 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	position: relative;
+	background-color: rgba(0,0,0,0.9);
+}
+.box{
+	width:500px;
+	height:500px;
+	margin:100px auto;
+	border:2px rgba(200,200,200,1) solid;
+	border-radius: 252px;
+	overflow: hidden;
+	position: relative;
+	/*box-shadow: 0 0 150px rgb(0,0,0);*/
+}
+.box.powerOn{
+	box-shadow: 0 0 150px rgb(255,255,255);
+}
+.buttons{
+	width:245px;
+	height:245px;
+	/*display: inline-block;*/
+	float: left;
+	
+}
+.buttons:hover{
+	cursor: pointer;
+}
+.green{
+	background-color: rgb(0,167,74);
+	border-right:5px rgba(20,20,20,1) solid;
+	border-bottom:5px rgba(20,20,20,1) solid;
+}
+.red{
+	background-color: rgb(159,15,23);
+	border-left:5px rgba(20,20,20,1) solid;
+	border-bottom:5px rgba(20,20,20,1) solid;
+}
+.yellow{
+	background-color: rgb(204,167,7);
+	border-right:5px rgba(20,20,20,1) solid;
+	border-top:5px rgba(20,20,20,1) solid;
+}
+.blue{
+	background-color: rgb(9,74,143);
+	border-left:5px rgba(20,20,20,1) solid;
+	border-top:5px rgba(20,20,20,1) solid;
+}
+.green.light{
+	background-color: rgb(0,255,74);
+}
+.red.light{
+	background-color: rgb(255,15,23);
+}
+.yellow.light{
+	background-color: rgb(255,255,7);
+}
+.blue.light{
+	background-color: rgb(9,150,255);
+}
+.menu{
+	width:200px;
+	height:200px;
+	background-color: rgba(20,20,20,1);
+	border:2px rgba(2,2,2,1) solid;
+	border-radius: 100px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -100px;
+	margin-left:-100px;
+	text-align: center;
+	box-shadow: 0 0 50px rgb(0,0,0);
+}
+.menu p{
+	width:100px;
+	height:22px;
+	margin:35px auto 20px;
+	background-color: rgba(100,100,100,0.8);
+	/*color:rgba(250,30,40,0.9);*/
+	text-shadow:0 0 5px rgb(255,255,255);
+	box-shadow:0 0 5px rgba(200,200,200,0.8);
+	border:1px rgba(100,100,100,1) solid;
+}
+.menu p.powerOn{
+	background-color: rgba(150,150,150,1);
+	color:rgba(250,30,40,0.9);
+	text-shadow:0 0 5px rgb(255,255,255);
+	box-shadow:0 0 15px rgb(255,255,255);
+}
+.power{
+	background-color: rgba(100,100,100,1);
+	width:40px;
+	height: 40px;
+	margin:10px auto 20px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.power:hover{
+	cursor: pointer;
+}
+.power.powerOn{
+	background-color: rgba(255,255,255,1);
+	width:40px;
+	height: 40px;
+	margin:10px auto 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(255,255,255,1);
+}
+.power img{
+	width: 40px;
+}
+
+.controls button{
+	width: 55px;
+	height:20px;
+	font-size:16px;
+	outline: none;
+	border-radius: 5px;
+	background-color: rgba(50,50,50,0.8);
+	color:rgba(100,100,100,1);
+	/*color:rgba(200,200,200,0.8);*/
+	border:0;
+}
+.controls button.powerOn{
+	color:rgba(200,200,200,1);
+	text-shadow:0 0 3px rgb(200,200,200);
+}
+.controls button:hover{
+	background-color: rgba(100,100,100,1);
+	color:rgba(255,255,255,1);
+	text-shadow:0 0 5px rgb(255,255,255);
+	/*box-shadow:0 0 10px rgb(255,255,255);*/
+	cursor: pointer;
+}
+.controls button:nth-child(3){
+	width: 40px;
+	height:20px;
+	margin-left:10px;
+}
+.controls button:nth-child(3).strictOn{
+	background-color: rgba(200,200,200,1);
+	color:rgba(255,0,0,1);
+	text-shadow:0 0 5px rgb(255,255,255);
+	box-shadow:0 0 10px rgb(255,255,255);
+	cursor: pointer;
+}
+.cover1{
+	width:520px;
+	height:190px;
+	/*border:2px rgba(0,255,0,1) solid;*/
+	position: absolute;
+	left:50%;
+	top:-10px;
+	margin-left: -260px;
+	z-index: 99;
+}
+.cover2{
+	width:200px;
+	height:520px;
+	/*border:2px rgba(255,0,0,1) solid;*/
+	position: absolute;
+	left:50%;
+	top:-10px;
+	margin-left: 60px;
+	z-index: 99;
+}
+.cover3{
+	width:200px;
+	height:520px;
+	/*border:2px rgba(255,255,0,1) solid;*/
+	position: absolute;
+	left:50%;
+	top:-10px;
+	margin-left: -260px;
+	z-index: 99;
+}
+.cover4{
+	width:520px;
+	height:220px;
+	/*border:2px rgba(0,0,255,1) solid;*/
+	position: absolute;
+	left:50%;
+	top:290px;
+	margin-left: -260px;
+	z-index: 99;
+}
+.disappear{
+	display: none;
+}
