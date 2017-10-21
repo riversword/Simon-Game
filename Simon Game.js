@@ -1,5 +1,5 @@
 /*  Simon Game
-*   by riversword - 2017
+*   design and code by riversword - 2017
 */
 $(document).ready(function(){
 	var rul=[],btns=[0,1,2,3],checkIndex=0,level=0,power=false,strict=false;

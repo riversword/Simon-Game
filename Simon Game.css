@@ -6,12 +6,17 @@ body{
 	position: relative;
 	background-color: rgba(0,0,0,0.9);
 }
+h3{
+	color:rgba(255,255,255,0.6);
+	text-align: center;
+}
 .box{
 	width:500px;
 	height:500px;
-	margin:100px auto;
+	margin:50px auto 100px;
 	border:2px rgba(200,200,200,1) solid;
-	border-radius: 252px;
+	/*border-radius: 252px;*/
+	border-radius: 50%;
 	overflow: hidden;
 	position: relative;
 	/*box-shadow: 0 0 150px rgb(0,0,0);*/
@@ -66,7 +71,7 @@ body{
 	height:200px;
 	background-color: rgba(20,20,20,1);
 	border:2px rgba(2,2,2,1) solid;
-	border-radius: 100px;
+	border-radius: 50%;
 	position:absolute;
 	top:50%;
 	left:50%;
@@ -96,7 +101,7 @@ body{
 	width:40px;
 	height: 40px;
 	margin:10px auto 20px;
-	border-radius: 20px;
+	border-radius: 50%;
 	overflow: hidden;
 }
 .power:hover{
@@ -104,10 +109,6 @@ body{
 }
 .power.powerOn{
 	background-color: rgba(255,255,255,1);
-	width:40px;
-	height: 40px;
-	margin:10px auto 20px;
-	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(255,255,255,1);
 }
@@ -155,7 +156,7 @@ body{
 	/*border:2px rgba(0,255,0,1) solid;*/
 	position: absolute;
 	left:50%;
-	top:-10px;
+	top:60px;
 	margin-left: -260px;
 	z-index: 99;
 }
@@ -165,7 +166,7 @@ body{
 	/*border:2px rgba(255,0,0,1) solid;*/
 	position: absolute;
 	left:50%;
-	top:-10px;
+	top:60px;
 	margin-left: 60px;
 	z-index: 99;
 }
@@ -175,7 +176,7 @@ body{
 	/*border:2px rgba(255,255,0,1) solid;*/
 	position: absolute;
 	left:50%;
-	top:-10px;
+	top:60px;
 	margin-left: -260px;
 	z-index: 99;
 }
@@ -185,10 +186,135 @@ body{
 	/*border:2px rgba(0,0,255,1) solid;*/
 	position: absolute;
 	left:50%;
-	top:290px;
+	top:360px;
 	margin-left: -260px;
 	z-index: 99;
 }
 .disappear{
 	display: none;
+}
+.footer{
+	text-align: center;
+	margin-top: 50px;
+	color:rgba(255,255,255,0.6);
+}
+/*适应移动端*/
+@media screen and (max-width: 520px){
+.box{
+	width:300px;
+	height:300px;
+	margin:50px auto 100px;
+	border:2px rgba(200,200,200,1) solid;
+}
+.buttons{
+	width:147px;
+	height:147px;
+	border-width:3px;
+}
+
+.menu{
+	width:100px;
+	height:100px;
+	margin-top: -50px;
+	margin-left:-50px;
+}
+.menu p{
+	width:60px;
+	height:12px;
+	line-height: 12px;
+	margin:16px auto 10px;
+	font-size: 0.6em;
+
+}
+.menu p.powerOn{
+	text-shadow:0 0 3px rgb(255,255,255);
+	box-shadow:0 0 8px rgb(255,255,255);
+}
+.power{
+	width:20px;
+	height: 20px;
+	margin:5px auto 5px;
+}
+.power.powerOn{
+	box-shadow: 0 0 10px rgba(255,255,255,1);
+}
+
+.power img{
+	width: 20px;
+}
+.controls{
+	width:100%;
+	/*border:1px rgb(255,255,255) solid;*/
+	text-align: left;
+}
+.controls button{
+	/*width:27px;*/
+	height:12px;
+	line-height: 12px;
+	/*font-size:16px;*/
+	font-size: 0.6em;
+	border-radius: 1px;
+
+}
+.controls button.powerOn{
+	/*text-shadow:0 0 3px rgb(200,200,200);*/
+}
+.controls button:hover{
+	/*令其为原始色彩开机*/
+	background-color: rgba(50,50,50,0.8);
+	color:rgba(200,200,200,1);
+	text-shadow:0 0 3px rgb(200,200,200);
+}
+.controls button:nth-child(1){
+	width:23px;
+	height:12px;
+	margin-left:22px;
+}
+.controls button:nth-child(2){
+	width:30px;
+	height:12px;
+	margin-left:18px;
+	margin-right: 2px
+}
+.controls button:nth-child(3){
+	width:26px;
+	height:12px;
+	margin-left:0;
+}
+.controls button:nth-child(3).strictOn{
+	text-shadow:0 0 3px rgb(255,255,255);
+	box-shadow:0 0 5px rgb(255,255,255);
+}
+
+.cover1{
+	width:320px;
+	height:140px;
+	/*border:2px rgba(0,255,0,1) solid;*/
+	top:55px;
+	margin-left: -160px;
+}
+.cover2{
+	width:125px;
+	height:320px;
+	/*border:2px rgba(255,0,0,1) solid;*/
+	top:55px;
+	margin-left: 35px;
+}
+.cover3{
+	width:120px;
+	height:320px;
+	/*border:2px rgba(255,255,0,1) solid;*/
+	top:55px;
+	margin-left: -158px;
+}
+.cover4{
+	width:320px;
+	height:135px;
+	/*border:2px rgba(0,0,255,1) solid;*/
+	top:245px;
+	margin-left: -160px;
+}
+.footer{
+	margin-top: 200px;
+}
 }
