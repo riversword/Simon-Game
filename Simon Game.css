@@ -1,320 +1,322 @@
 *{
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
+
 body{
 	position: relative;
 	background-color: rgba(0,0,0,0.9);
 }
+
 h3{
-	color:rgba(255,255,255,0.6);
+	color: rgba(255,255,255,0.6);
 	text-align: center;
 }
+
 .box{
-	width:500px;
-	height:500px;
-	margin:50px auto 100px;
-	border:2px rgba(200,200,200,1) solid;
-	/*border-radius: 252px;*/
-	border-radius: 50%;
-	overflow: hidden;
 	position: relative;
-	/*box-shadow: 0 0 150px rgb(0,0,0);*/
+	width: 500px;
+	height: 500px;
+	margin: 50px auto 100px;
+	overflow: hidden;
+	border: 2px rgba(200,200,200,1) solid;
+	border-radius: 50%;
 }
-.box.powerOn{
-	box-shadow: 0 0 150px rgb(255,255,255);
-}
+
+.box.powerOn{ box-shadow: 0 0 150px rgb(255,255,255); }
+
 .buttons{
-	width:245px;
-	height:245px;
-	/*display: inline-block;*/
+	width: 245px;
+	height: 245px;
 	float: left;
-	
 }
-.buttons:hover{
-	cursor: pointer;
-}
+
+.buttons:hover{ cursor: pointer; }
+
 .green{
 	background-color: rgb(0,167,74);
-	border-right:5px rgba(20,20,20,1) solid;
-	border-bottom:5px rgba(20,20,20,1) solid;
+	border-right: 5px rgba(20,20,20,1) solid;
+	border-bottom: 5px rgba(20,20,20,1) solid;
 }
+
 .red{
 	background-color: rgb(159,15,23);
-	border-left:5px rgba(20,20,20,1) solid;
-	border-bottom:5px rgba(20,20,20,1) solid;
+	border-left: 5px rgba(20,20,20,1) solid;
+	border-bottom: 5px rgba(20,20,20,1) solid;
 }
+
 .yellow{
 	background-color: rgb(204,167,7);
-	border-right:5px rgba(20,20,20,1) solid;
-	border-top:5px rgba(20,20,20,1) solid;
+	border-right: 5px rgba(20,20,20,1) solid;
+	border-top: 5px rgba(20,20,20,1) solid;
 }
+
 .blue{
 	background-color: rgb(9,74,143);
-	border-left:5px rgba(20,20,20,1) solid;
-	border-top:5px rgba(20,20,20,1) solid;
+	border-left: 5px rgba(20,20,20,1) solid;
+	border-top: 5px rgba(20,20,20,1) solid;
 }
-.green.light{
-	background-color: rgb(0,255,74);
-}
-.red.light{
-	background-color: rgb(255,15,23);
-}
-.yellow.light{
-	background-color: rgb(255,255,7);
-}
-.blue.light{
-	background-color: rgb(9,150,255);
-}
+
+.green.light{ background-color: rgb(0,255,74); }
+
+.red.light{ background-color: rgb(255,15,23); }
+
+.yellow.light{ background-color: rgb(255,255,7); }
+
+.blue.light{ background-color: rgb(9,150,255); }
+
 .menu{
-	width:200px;
-	height:200px;
-	background-color: rgba(20,20,20,1);
-	border:2px rgba(2,2,2,1) solid;
-	border-radius: 50%;
 	position:absolute;
-	top:50%;
-	left:50%;
+	top: 50%;
+	left: 50%;
 	margin-top: -100px;
-	margin-left:-100px;
+	margin-left: -100px;
+	width: 200px;
+	height:200px;
 	text-align: center;
+	background-color: rgba(20,20,20,1);
+	border: 2px rgba(2,2,2,1) solid;
+	border-radius: 50%;
 	box-shadow: 0 0 50px rgb(0,0,0);
 }
+
 .menu p{
-	width:100px;
-	height:22px;
-	margin:35px auto 20px;
+	width: 100px;
+	height: 22px;
+	margin: 35px auto 20px;
 	background-color: rgba(100,100,100,0.8);
-	/*color:rgba(250,30,40,0.9);*/
-	text-shadow:0 0 5px rgb(255,255,255);
-	box-shadow:0 0 5px rgba(200,200,200,0.8);
-	border:1px rgba(100,100,100,1) solid;
+	text-shadow: 0 0 5px rgb(255,255,255);
+	box-shadow: 0 0 5px rgba(200,200,200,0.8);
+	border: 1px rgba(100,100,100,1) solid;
 }
+
 .menu p.powerOn{
 	background-color: rgba(150,150,150,1);
-	color:rgba(250,30,40,0.9);
-	text-shadow:0 0 5px rgb(255,255,255);
-	box-shadow:0 0 15px rgb(255,255,255);
+	color: rgba(250,30,40,0.9);
+	text-shadow: 0 0 5px rgb(255,255,255);
+	box-shadow: 0 0 15px rgb(255,255,255);
 }
+
 .power{
-	background-color: rgba(100,100,100,1);
-	width:40px;
+	overflow: hidden;
+	width: 40px;
 	height: 40px;
-	margin:10px auto 20px;
+	margin: 10px auto 20px;
 	border-radius: 50%;
-	overflow: hidden;
+	background-color: rgba(100,100,100,1);
 }
-.power:hover{
-	cursor: pointer;
-}
+
+.power:hover{ cursor: pointer; }
+
 .power.powerOn{
-	background-color: rgba(255,255,255,1);
 	overflow: hidden;
+	background-color: rgba(255,255,255,1);
 	box-shadow: 0 0 20px rgba(255,255,255,1);
 }
-.power img{
-	width: 40px;
-}
+
+.power img{ width: 40px; }
 
 .controls button{
 	width: 55px;
-	height:20px;
-	font-size:16px;
-	outline: none;
+	height: 20px;
+	font-size: 16px;
 	border-radius: 5px;
+	border: 0;
 	background-color: rgba(50,50,50,0.8);
-	color:rgba(100,100,100,1);
-	/*color:rgba(200,200,200,0.8);*/
-	border:0;
+	color: rgba(100,100,100,1);
+	outline: none;
 }
+
 .controls button.powerOn{
-	color:rgba(200,200,200,1);
-	text-shadow:0 0 3px rgb(200,200,200);
+	color: rgba(200,200,200,1);
+	text-shadow: 0 0 3px rgb(200,200,200);
 }
 .controls button:hover{
 	background-color: rgba(100,100,100,1);
-	color:rgba(255,255,255,1);
-	text-shadow:0 0 5px rgb(255,255,255);
-	/*box-shadow:0 0 10px rgb(255,255,255);*/
+	color: rgba(255,255,255,1);
+	text-shadow: 0 0 5px rgb(255,255,255);
 	cursor: pointer;
 }
+
 .controls button:nth-child(3){
 	width: 40px;
-	height:20px;
-	margin-left:10px;
+	height: 20px;
+	margin-left: 10px;
 }
+
 .controls button:nth-child(3).strictOn{
 	background-color: rgba(200,200,200,1);
-	color:rgba(255,0,0,1);
-	text-shadow:0 0 5px rgb(255,255,255);
-	box-shadow:0 0 10px rgb(255,255,255);
+	color: rgba(255,0,0,1);
+	text-shadow: 0 0 5px rgb(255,255,255);
+	box-shadow: 0 0 10px rgb(255,255,255);
 	cursor: pointer;
 }
+
 .cover1{
-	width:520px;
-	height:190px;
-	/*border:2px rgba(0,255,0,1) solid;*/
 	position: absolute;
-	left:50%;
-	top:60px;
+	left: 50%;
+	top: 60px;
 	margin-left: -260px;
 	z-index: 99;
+	width: 520px;
+	height: 190px;	
 }
+
 .cover2{
-	width:200px;
-	height:520px;
-	/*border:2px rgba(255,0,0,1) solid;*/
 	position: absolute;
-	left:50%;
-	top:60px;
+	left: 50%;
+	top: 60px;
 	margin-left: 60px;
 	z-index: 99;
+	width: 200px;
+	height: 520px;
 }
+
 .cover3{
-	width:200px;
-	height:520px;
-	/*border:2px rgba(255,255,0,1) solid;*/
 	position: absolute;
-	left:50%;
-	top:60px;
+	left: 50%;
+	top: 60px;
 	margin-left: -260px;
 	z-index: 99;
+	width: 200px;
+	height: 520px;	
 }
+
 .cover4{
-	width:520px;
-	height:220px;
-	/*border:2px rgba(0,0,255,1) solid;*/
 	position: absolute;
-	left:50%;
-	top:360px;
+	left: 50%;
+	top: 360px;
 	margin-left: -260px;
 	z-index: 99;
+	width: 520px;
+	height: 220px;
 }
-.disappear{
-	display: none;
-}
+
+.disappear{ display: none; }
+
 .footer{
-	text-align: center;
 	margin-top: 50px;
-	color:rgba(255,255,255,0.6);
+	text-align: center;
+	color: rgba(255,255,255,0.6);
 }
-/*适应移动端*/
+
+
 @media screen and (max-width: 520px){
+
 .box{
-	width:300px;
-	height:300px;
-	margin:50px auto 100px;
-	border:2px rgba(200,200,200,1) solid;
+	width: 300px;
+	height: 300px;
+	margin: 50px auto 100px;
+	border: 2px rgba(200,200,200,1) solid;
 }
+
 .buttons{
-	width:147px;
-	height:147px;
-	border-width:3px;
+	width: 147px;
+	height: 147px;
+	border-width: 3px;
 }
 
 .menu{
-	width:100px;
-	height:100px;
+	width: 100px;
+	height: 100px;
 	margin-top: -50px;
-	margin-left:-50px;
+	margin-left: -50px;
 }
+
 .menu p{
-	width:60px;
-	height:12px;
+	width: 60px;
+	height: 12px;
 	line-height: 12px;
-	margin:16px auto 10px;
+	margin: 16px auto 10px;
 	font-size: 0.6em;
 
 }
+
 .menu p.powerOn{
-	text-shadow:0 0 3px rgb(255,255,255);
-	box-shadow:0 0 8px rgb(255,255,255);
-}
-.power{
-	width:20px;
-	height: 20px;
-	margin:5px auto 5px;
-}
-.power.powerOn{
-	box-shadow: 0 0 10px rgba(255,255,255,1);
+	text-shadow: 0 0 3px rgb(255,255,255);
+	box-shadow: 0 0 8px rgb(255,255,255);
 }
 
-.power img{
+.power{
 	width: 20px;
+	height: 20px;
+	margin: 5px auto 5px;
 }
+
+.power.powerOn{ box-shadow: 0 0 10px rgba(255,255,255,1); }
+
+.power img{ width: 20px; }
+
 .controls{
-	width:100%;
-	/*border:1px rgb(255,255,255) solid;*/
+	width: 100%;
 	text-align: left;
 }
+
 .controls button{
-	/*width:27px;*/
-	height:12px;
+	height: 12px;
 	line-height: 12px;
-	/*font-size:16px;*/
 	font-size: 0.6em;
 	border-radius: 1px;
+}
 
-}
-.controls button.powerOn{
-	/*text-shadow:0 0 3px rgb(200,200,200);*/
-}
 .controls button:hover{
-	/*令其为原始色彩开机*/
 	background-color: rgba(50,50,50,0.8);
-	color:rgba(200,200,200,1);
-	text-shadow:0 0 3px rgb(200,200,200);
+	color: rgba(200,200,200,1);
+	text-shadow: 0 0 3px rgb(200,200,200);
 }
+
 .controls button:nth-child(1){
-	width:23px;
-	height:12px;
-	margin-left:22px;
+	width: 23px;
+	height: 12px;
+	margin-left: 22px;
 }
+
 .controls button:nth-child(2){
-	width:30px;
-	height:12px;
-	margin-left:18px;
+	width: 30px;
+	height: 12px;
+	margin-left: 18px;
 	margin-right: 2px
 }
+
 .controls button:nth-child(3){
-	width:26px;
-	height:12px;
-	margin-left:0;
+	width: 26px;
+	height: 12px;
+	margin-left: 0;
 }
+
 .controls button:nth-child(3).strictOn{
-	text-shadow:0 0 3px rgb(255,255,255);
-	box-shadow:0 0 5px rgb(255,255,255);
+	text-shadow: 0 0 3px rgb(255,255,255);
+	box-shadow: 0 0 5px rgb(255,255,255);
 }
 
 .cover1{
-	width:320px;
-	height:140px;
-	/*border:2px rgba(0,255,0,1) solid;*/
-	top:55px;
+	width: 320px;
+	height: 140px;
+	top: 55px;
 	margin-left: -160px;
 }
+
 .cover2{
-	width:125px;
-	height:320px;
-	/*border:2px rgba(255,0,0,1) solid;*/
-	top:55px;
+	width: 125px;
+	height: 320px;
+	top: 55px;
 	margin-left: 35px;
 }
+
 .cover3{
-	width:120px;
-	height:320px;
-	/*border:2px rgba(255,255,0,1) solid;*/
-	top:55px;
+	width: 120px;
+	height: 320px;
+	top: 55px;
 	margin-left: -158px;
 }
+
 .cover4{
-	width:320px;
-	height:135px;
-	/*border:2px rgba(0,0,255,1) solid;*/
-	top:245px;
+	width: 320px;
+	height: 135px;
+	top: 245px;
 	margin-left: -160px;
 }
-.footer{
-	margin-top: 200px;
-}
+
+.footer{ margin-top: 200px; }
+
 }
